@@ -16,4 +16,5 @@ func main() {
 	http.HandleFunc("/", backend.HomePage)
 
 	http.ListenAndServe(":9090", nil)
+	//Соси Борис
 }

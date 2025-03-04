@@ -14,7 +14,8 @@ func main() {
 
 	// Обработчик главной страницы
 	http.HandleFunc("/", backend.HomePage)
+	http.HandleFunc("/predregister/", backend.Predregister)
 
 	http.ListenAndServe(":9090", nil)
-	//Соси Борис
+
 }

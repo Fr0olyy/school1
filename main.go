@@ -19,7 +19,7 @@ func main() {
 	// Настраиваем обработку остальных статических файлов
 	fs := http.FileServer(http.Dir("frontend"))
 	http.Handle("/scripts/", http.StripPrefix("/scripts/", fs))
-	http.Handle("/assets/", http.StripPrefix("/assets/", fs))
+	http.Handle("/assets/", fs)
 
 	// Обработчики страниц
 	http.HandleFunc("/", backend.HomePage)

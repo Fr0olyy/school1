@@ -1,3 +1,15 @@
+:root {
+    --primary-color: #1a73e8;
+    --secondary-color: #5f6368;
+    --secondary-color-non-visible: rgba(255, 255, 255, 0.8);
+    --grey-color: #f8f9fa;
+    --accent-color: #0056b3;
+}
+
+body {
+    background: red !important;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -63,16 +75,17 @@ html, body {
 }
 
 .log-in-btn {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: 500;
     padding: 8px 16px;
     border-radius: 8px;
     transition: background-color 0.3s ease;
+    border: 1px solid var(--secondary-color);
 }
 
 .log-in-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .login-btn {

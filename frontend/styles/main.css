@@ -1,10 +1,3 @@
-:root {
-    --primary-color: #1a1a1a;
-    --secondary-color: #ffffff;
-    --secondary-color-non-visible: rgba(255, 255, 255, 0.8);
-    --accent-color: #0056b3;
-}
-
 html, body {
     margin: 0;
     padding: 0;

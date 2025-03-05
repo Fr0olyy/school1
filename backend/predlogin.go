@@ -5,8 +5,8 @@ import (
 	"net/http"
 )
 
-func Predregister(w http.ResponseWriter, r *http.Request) {
-	tmpl, err := template.ParseFiles("frontend/predregister.html")
+func Predlogin(w http.ResponseWriter, r *http.Request) {
+	tmpl, err := template.ParseFiles("frontend/predlogin.html")
 	if err != nil {
 		http.Error(w, "Ошибка при загрузке шаблона.", http.StatusInternalServerError)
 		return

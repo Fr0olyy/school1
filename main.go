@@ -8,13 +8,13 @@ import (
 func main() {
 	// Настраиваем обработку статических файлов
 	fs := http.FileServer(http.Dir("frontend"))
-	http.Handle("/styles/", fs)
+	http.Handle("/styles/", http.StripPrefix("/styles/", fs))
 	http.Handle("/scripts/", fs)
 	http.Handle("/assets/", fs)
 
 	// Обработчик главной страницы
 	http.HandleFunc("/", backend.HomePage)
-	http.HandleFunc("/predregister/", backend.Predregister)
+	http.HandleFunc("/predlogin/", backend.Predlogin)
 
 	http.ListenAndServe(":9090", nil)
 

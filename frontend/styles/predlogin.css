@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--grey-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.language-selector {
+    display: flex;
+    gap: 1rem;
+    justify-self: start;
+}
+
+.language-selector a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    width: 2rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.language-selector a.active {
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.logo-container {
+    text-align: center;
+    justify-self: center;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-self: end;
+}
+
+.log-in-btn {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.log-in-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.login-btn {
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #1557b0;
+}
+
+.search-btn, .menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: var(--secondary-color);
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}

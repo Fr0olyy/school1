@@ -10,21 +10,59 @@
 	<body>
 		<header class="header">
 			<nav class="nav-container">
-				<div class="nav_logo">
-					<img src="/assets/logo.png" alt="" class="logo" />
+				<div class="nav-left">
+					<a href="/" class="logo-link"><img src="/assets/logo.png" alt="logo" class="logo"></a>
 				</div>
-				<div class="logo-container">
+				<div class="nav-menu">
 					<a href="#">На главную</a>
 					<a href="#">Логин</a>
 					<a href="#">Войти гостем</a>
 					<a href="#">Контакты</a>
 				</div>
 				<div class="nav-right">
-					<a href="#" class="log-in-btn">Log in</a>
-					<a href="/login/" class="login-btn">Login</a>
+					<a href="#" class="log-in-btn">Войти как гость</a>
+					<a href="/login/" class="login-btn">Войти</a>
 				</div>
 			</nav>
 		</header>
-		<main></main>
+		<main class="main-content">
+			<div class="hero-section">
+				<h1>Добро пожаловать<br>на наш школьный сайт</h1>
+				<p class="subtitle">Мы очень рады вас видеть на сайте нашей школы</p>
+				<div class="cta-buttons">
+					<a href="/login/" class="guest-login-btn">Войти как учитель/ученик</a>
+					<a href="#" class="student-login-link">Войти как гость</a>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-section">
+					<h3>Контакты</h3>
+					<ul>
+						<li>
+							<strong>Телефон:</strong>
+							<a href="tel:+7-XXX-XXX-XX-XX">+7 (48142) 4-19-32</a>
+						</li>
+						<li>
+							<strong>Email:</strong>
+							<a href="mailto:school@example.com">school@example.com</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-section">
+					<h3>Адрес</h3>
+					<p>г. Сафоново, ул. Красногвардейская, д. 34</p>
+					<p><strong>Время работы:</strong> Пн-Пт с 8:00 до 17:00</p>
+				</div>
+				<div class="footer-section">
+					<h3>Социальные сети</h3>
+					<div class="social-links">
+						<a href="#" class="social-link">VK</a>
+						<a href="#" class="social-link">Telegram</a>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

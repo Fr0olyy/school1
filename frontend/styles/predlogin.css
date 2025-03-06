@@ -119,8 +119,8 @@ body {
 
 .cta-buttons {
     display: flex;
-    gap: 1rem;
     justify-content: center;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -131,20 +131,20 @@ body {
     padding: 12px 32px;
     border-radius: 4px;
     font-weight: 500;
-    transition: background-color 0.2s;
-}
-
-.guest-login-btn:hover {
-    opacity: 0.9;
+    transition: opacity 0.2s;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
 }
 
 .student-login-link {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 500;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    white-space: nowrap;
 }
 
 .student-login-link:hover {
@@ -234,5 +234,17 @@ body {
     
     .social-links {
         justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .login-buttons {
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: center;
+    }
+    
+    .guest-login-btn {
+        width: auto;
     }
 }

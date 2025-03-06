@@ -9,3 +9,4 @@ languageLinks.forEach(link => {
     });
 });
 
+console.log('JS работает!'); 

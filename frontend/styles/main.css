@@ -1,201 +1,204 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--primary-color);
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/assets/School.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    position: relative;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: var(--primary-color);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('/assets/photo/School.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100vh;
+	position: relative;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem 2rem;
-    z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 1rem 2rem;
+	z-index: 1000;
 }
 
 .nav-container {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-    gap: 2rem;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	align-items: center;
+	max-width: 1400px;
+	margin: 0 auto;
+	gap: 2rem;
 }
 
 .language-selector {
-    display: flex;
-    gap: 1rem;
-    justify-self: start;
+	display: flex;
+	gap: 1rem;
+	justify-self: start;
 }
 
 .language-selector a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-weight: bold;
-    width: 2rem;
-    text-align: center;
-    padding: 0.5rem 0;
-    position: relative;
+	text-decoration: none;
+	color: var(--secondary-color);
+	font-weight: bold;
+	width: 2rem;
+	text-align: center;
+	padding: 0.5rem 0;
+	position: relative;
 }
 
 .language-selector a.active {
-    border-bottom: 3px solid var(--secondary-color);
+	border-bottom: 3px solid var(--secondary-color);
 }
 
 .logo-container {
-    text-align: center;
-    justify-self: center;
+	text-align: center;
+	justify-self: center;
 }
 
 .logo {
-    height: 60px;
-    width: 60px;
+	height: 60px;
+	width: 60px;
 }
 
 .nav-right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-self: end;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	justify-self: end;
 }
 
 .admissions-btn {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 15px;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	border-radius: 15px;
 }
 
-.search-btn, .menu-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    color: var(--secondary-color);
+.search-btn,
+.menu-btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0.5rem;
+	color: var(--secondary-color);
 }
 .menu-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    color: var(--secondary-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.3rem;
-    font-weight: bold;
-    font-size: 0.7rem;
-    letter-spacing: 1px;
-    min-width: 45px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0.5rem;
+	color: var(--secondary-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.3rem;
+	font-weight: bold;
+	font-size: 0.7rem;
+	letter-spacing: 1px;
+	min-width: 45px;
 }
 
 .menu-icon {
-    width: 35px;
-    height: 18px;
-    margin-bottom: -2px;
+	width: 35px;
+	height: 18px;
+	margin-bottom: -2px;
 }
 
 .hero {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--secondary-color-non-visible);
-    padding: 2rem;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--secondary-color-non-visible);
+	padding: 2rem;
 }
 
 .hero h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	font-size: 4rem;
+	margin-bottom: 1rem;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-text {
-    font-size: 1.2rem;
-    max-width: 800px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	font-size: 1.2rem;
+	max-width: 800px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .main-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    z-index: 1000;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	z-index: 1000;
 }
 
 .main-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 1rem 2rem;
+	border-radius: 50px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
 }
 
 .nav-item {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
-    padding: 0.8rem 2rem;
-    transition: all 0.3s ease;
-    border-radius: 25px;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+	text-decoration: none;
+	color: var(--primary-color);
+	font-weight: bold;
+	padding: 0.8rem 2rem;
+	transition: all 0.3s ease;
+	border-radius: 25px;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	letter-spacing: 1px;
 }
 
 .nav-item:hover {
-    background-color: rgba(0, 86, 179, 0.1);
+	background-color: rgba(0, 86, 179, 0.1);
 }
 
 .nav-item.active {
-    color: var(--secondary-color);
-    background-color: var(--accent-color);
+	color: var(--secondary-color);
+	background-color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .main-nav ul {
-        gap: 0.5rem;
-        padding: 0.8rem 1.5rem;
-    }
-    
-    .nav-item {
-        padding: 0.6rem 1rem;
-        font-size: 0.8rem;
-    }
-} 
+	.hero h1 {
+		font-size: 2.5rem;
+	}
+
+	.main-nav ul {
+		gap: 0.5rem;
+		padding: 0.8rem 1.5rem;
+	}
+
+	.nav-item {
+		padding: 0.6rem 1rem;
+		font-size: 0.8rem;
+	}
+}

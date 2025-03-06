@@ -1,9 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Вход на сайт</title>
+		<title>Авторизация</title>
+		<link href="/styles/colors.css" rel="stylesheet">
+		<link href="/styles/login.css" rel="stylesheet">
 	</head>
-	<body></body>
+	<body>
+		<div class="auth-container">
+			<div class="auth-card">
+				<div class="logo-wrapper">
+					<img src="/assets/logo.png" alt="Логотип" class="auth-logo">
+				</div>
+				<h1 class="auth-title">Вход в систему</h1>
+				
+				<form class="auth-form">
+					<div class="input-group">
+						<input type="text" id="username" required>
+						<label for="username">Логин или Email</label>
+						<div class="underline"></div>
+					</div>
+					
+					<div class="input-group">
+						<input type="password" id="password" required>
+						<label for="password">Пароль</label>
+						<div class="underline"></div>
+					</div>
+
+					<button type="submit" class="auth-btn">
+						<span>Войти</span>
+						<div class="wave"></div>
+					</button>
+				</form>
+
+				<div class="auth-links">
+					<a href="/recover" class="link">Забыли пароль?</a>
+					<a href="/support" class="link">Техническая поддержка</a>
+				</div>
+			</div>
+		</div>
+		<script src="/scripts/login.js"></script>
+	</body>
 </html>
